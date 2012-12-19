@@ -1,0 +1,6 @@
+Revision history for Perl extension SagePay::XORForm.
+
+0.01  Thu Dec 13 15:20:36 2012
+	- original version; created by h2xs 1.23 with options
+		-AX SagePay::XORForm
+
