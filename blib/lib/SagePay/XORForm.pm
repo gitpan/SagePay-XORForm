@@ -8,7 +8,7 @@ use MIME::Base64;
 
 use vars qw($VERSION);
 
-our $VERSION = '0.02';
+our $VERSION = '0.01';
 
 
 ## * Constructor and methods....
@@ -72,7 +72,8 @@ sub _simpleXor {
 		#% is MOD (modulus), ^ is XOR
 		$output.= chr(ord(substr($InString, $i, 1)) ^ ($KeyList[$i % length($Key)]));		
 	}
-
+	
+	#Return the result
 	return $output;  
 } 
 
