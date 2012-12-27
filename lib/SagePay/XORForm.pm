@@ -8,7 +8,7 @@ use MIME::Base64;
 
 use vars qw($VERSION);
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 ## * Constructor and methods....
