@@ -1,4 +1,4 @@
-SagePay-XORForm version 0.01
+SagePay-XORForm version 0.03
 ============================
 
 The README is used to introduce the module and provide instructions on
@@ -11,6 +11,8 @@ README file from a module distribution so that people browsing the
 archive can use it get an idea of the modules uses. It is usually a
 good idea to provide version information here so that people can
 decide whether fixes for the module are worth downloading.
+
+This module is to help you integrate with the SagePay Form solution. 
 
 INSTALLATION
 

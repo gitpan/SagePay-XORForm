@@ -8,7 +8,7 @@ use MIME::Base64;
 
 use vars qw($VERSION);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 ## * Constructor and methods....
@@ -119,7 +119,7 @@ By default is it's disable but if you'd like new lines to be stripped set to 1 t
 
 my $enc_string = $obj->sage_xor_string({'strip_newlines' => 1});
 
-=head1 Dependencies
+=head1 DEPENDENCIES
 
 MIME::Base64
 
