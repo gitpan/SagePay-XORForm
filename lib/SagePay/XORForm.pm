@@ -8,7 +8,7 @@ use MIME::Base64;
 
 use vars qw($VERSION);
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 ## * Constructor and methods....
@@ -94,7 +94,7 @@ SagePay::XORForm - Perl extension for SagePay XOR form encryption
   my $obj = SagePay::XORForm->new( query_string => 'my form details string', 
 				   key => 'my password string to encrypt with');
 
-  my $encrypted_str = $obj->sage_xor_string([\%options]);  
+  my $encrypted_str = $obj->sage_xor_string(\%options);  
 
 =head1 DESCRIPTION
 
@@ -104,18 +104,18 @@ with the SagePay Form integration where an XOR encryption type format is require
 
 =head2 new()
 
-Class constructor, simply pass the query string and password key strings in, the module will croak without these values included. NB you must know what 
+Class constructor, simply pass in the query string and password key strings, the module will croak without these values included. NB you must know what 
 your account password is as this will serve as the key
 
-=head2 sage_xor_string([\%options])
+=head2 sage_xor_string(\%options)
 
 Call this method and the encrypted XOR string will be returned 
 
-=head3 %options
+=head3 \%options
 
 =head4 strip_newlines
 
-By default is it's disable but if you'd like new lines to be stripped set to 1 to enable e.g. 
+By default it's disabled but if you'd like new lines to be stripped set to 1 to enable e.g. 
 
 my $enc_string = $obj->sage_xor_string({'strip_newlines' => 1});
 
